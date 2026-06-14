@@ -48,7 +48,6 @@ module "private_subnet" {
   vpc_id          = aws_vpc.this.id
   vpc_name        = aws_vpc.this.tags["Name"]
   vpc_block       = var.vpc_block
-  # private_subnets = var.private_subnets
   azs = var.selected_azs
   create_nat_route = var.create_nat_gateway
   
