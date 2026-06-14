@@ -1,0 +1,25 @@
+# Região AWS onde os recursos serão provisionados
+regiao = "us-east-1"
+
+# Perfil AWS CLI local
+perfil = "terraform"
+
+# Nome lógico da VPC
+vpc_name = "main"
+
+# Bloco CIDR principal da VPC
+vpc_block = "10.0.0.0/16"
+
+# Availability Zones onde as subnets públicas e privadas serão criadas
+selected_azs = [
+  "us-east-1a",
+  "us-east-1b",
+  "us-east-1c"
+]
+
+# Habilita criação do NAT Gateway e da rota default privada para saída à internet
+create_nat_gateway = true
+
+# Configurações de DNS da VPC
+support_dns   = true
+dns_hostnames = true
